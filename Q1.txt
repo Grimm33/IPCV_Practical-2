@@ -8,3 +8,6 @@ Binary images are created through a thresholding algorithm, where greyscale pixe
 This means that Pewter and Graphine are colours that are above that thresholding limit, so they were turned black
 
 c - The above image required manual thresholding to achieve the above output.  What is adaptive thresholding and why do you think it is not suitable to render the above output?
+
+Adaptive thresholding is a method of thresholding where the threshold used to differentiate between black and white pixels gets calculated over a small region, meaning that different threshold values will be used for different parts of the image.
+This method would not work here are the images are all one solid colour, meaning that Grey Goose, Porpoise, and Pigeon would all be displayed as black in the binary image.
